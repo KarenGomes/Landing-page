@@ -9,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  constructor() { }
+
+  // Método para rolar a página para o topo
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
 }

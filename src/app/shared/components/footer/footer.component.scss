@@ -1,0 +1,86 @@
+@import "../../../../assets/styles/variables";
+
+.footer {
+  background-color: $primary-color;
+  z-index: 1;
+  .footer-logo {
+    height: 60px;
+  }
+
+  .footer-link {
+    transition: color 0.3s ease;
+    &:hover {
+      color: $secondary-color !important;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1rem;
+
+    .social-icon {
+      color: $white;
+      font-size: 1.8em;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .btn-scroll-top {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: $white;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    i {
+      font-size: 1.2em;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      background-color: darken(#ffc107, 10%) !important;
+      border-color: darken(#ffc107, 10%) !important;
+    }
+  }
+}
+
+// Estilo para a seção do Gradiente em Diagonal
+.footer-gradient-top {
+  height: 40px;
+  background: linear-gradient(120deg, $secondary-color 0%, $primary-color 100%);
+  transform: skewY(+2deg);
+  transform-origin: top left;
+  position: relative;
+  z-index: -1;
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    .row {
+      text-align: center;
+      .col-md-4 {
+        align-items: center !important;
+      }
+    }
+    .list-unstyled {
+      flex-direction: column !important;
+      align-items: center;
+    }
+    .social-icons {
+      justify-content: center;
+    }
+    .btn-scroll-top {
+      align-self: center;
+    }
+  }
+}
