@@ -1,0 +1,66 @@
+@import "../../../../../assets/styles/variables";
+
+.hero-banner {
+  background-color: $text-light;
+  overflow: hidden;
+
+  .display-4, .lead {
+    color: $text-dark;
+  }
+
+  .text-dark-blue {
+    padding-top: 30px;
+    color: $primary-color;
+  }
+
+  .text-secondary-dark {
+    color: $text-dark;
+  }
+
+  .text-primary-color {
+    color: $secondary-color;
+  }
+
+  .price-info {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    .price {
+      line-height: 1;
+      sup {
+        top: -0.5em;
+        font-size: 0.6em;
+      }
+    }
+  }
+
+  .custom-btn-blue {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+
+    &:hover {
+      background-color: lighten($primary-color, 10%);
+      border-color: lighten($primary-color, 10%);
+    }
+  }
+
+  .hero-image {
+    max-height: 500px;
+    object-fit: contain;
+  }
+
+  @media (max-width: 991.98px) {
+    .text-lg-start {
+      text-align: center !important;
+    }
+    .justify-content-lg-end {
+      justify-content: center !important;
+    }
+  }
+}
