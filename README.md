@@ -15,7 +15,7 @@ node -v
 npm -v
 ```
 
-## Instalação
+### Instalação
 
 Para obter uma cópia local do projeto, siga estes passos:
 
