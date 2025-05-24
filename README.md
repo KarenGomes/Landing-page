@@ -1,27 +1,48 @@
 # LandingPageProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+Este projeto é uma landing page desenvolvida com Angular CLI versão 17.0.9. e NodeJS v18.13.0.
 
-## Development server
+## Primeiros Passos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Siga as instruções abaixo para baixar e rodar este projeto em sua máquina local para fins de desenvolvimento e teste.
 
-## Code scaffolding
+### Pré-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Antes de começar, certifique-se de ter o Node.js e o npm (Node Package Manager) instalados em seu sistema. Você pode verificar as versões instaladas com os seguintes comandos:
 
-## Build
+```bash
+node -v
+npm -v
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalação
 
-## Running unit tests
+Para obter uma cópia local do projeto, siga estes passos:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1.  Clone o repositório do GitHub para a sua máquina:
+    ```bash
+    git clone [https://github.com/KarenGomes/Landing-page.git](https://github.com/KarenGomes/Landing-page.git)
+    ```
 
-## Running end-to-end tests
+2.  Navegue até o diretório do projeto:
+    ```bash
+    cd LandingPageProject
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3.  Instale as dependências do projeto. Este comando irá baixar todas as bibliotecas e pacotes necessários definidos no `package.json`:
+    ```bash
+    npm install
+    ```
 
-## Further help
+## Rodando o Projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Após a instalação das dependências, você pode iniciar o servidor de desenvolvimento.
+
+### Servidor de Desenvolvimento
+
+Para iniciar o servidor local e visualizar a aplicação:
+
+```bash
+ng serve
+
+```

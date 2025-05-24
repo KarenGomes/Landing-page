@@ -15,7 +15,7 @@ export class CardsComponent implements OnInit {
   plans: Product[] = [];
   filteredPlans: Product[] = [];
   searchTerm: string = '';
-  sortBy: string | null = null;
+  sortBy: string = 'default';
   isLoading: boolean = true;
   errorMessage: string | null = null;
 
@@ -30,13 +30,14 @@ export class CardsComponent implements OnInit {
     this.fetchPlans();
   }
 
+  // Método para buscar os planos do serviço
   async fetchPlans(): Promise<void> {
     this.isLoading = true;
     this.errorMessage = null;
     this.planService.getPlans().then((data: Product[]) => {
       this.plans = [...data];
-      this.applyFiltersAndSort(); // Aplica filtros e ordena após buscar todos os dados
-      this.calculateTotalPages(); // Calcula o total de páginas
+      this.applyFiltersAndSort();
+      this.calculateTotalPages();
     }).catch((error: any) => {
       this.errorMessage = 'Falha ao carregar os planos. Tente novamente mais tarde.';
       console.error('Erro ao buscar planos:', error);
@@ -45,6 +46,7 @@ export class CardsComponent implements OnInit {
     });
   }
 
+  // Método para atualizar os planos filtrados e ordenados
   applyFiltersAndSort(): void {
     let tempPlans = [...this.plans];
 

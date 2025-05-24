@@ -16,9 +16,9 @@
         <select
           class="form-select custom-select"
           [(ngModel)]="sortBy"
-          placeholder="Filtrar por preço"
           (change)="applyFiltersAndSort()"
         >
+          <option value="default" disabled selected>Filtrar por preço</option>
           <option value="menor">Menor preço</option>
           <option value="maior">Maior preço</option>
         </select>
