@@ -1,6 +1,6 @@
 # LandingPageProject
 
-Este projeto é uma landing page desenvolvida com Angular CLI versão 17.0.9. e NodeJS v18.13.0.
+Este projeto é uma landing page desenvolvida com Angular CLI versão 17.0.9. e NodeJS v18.13.0. que consome a API pública [fakeStoreApi](https://fakestoreapi.com/products)
 
 ## Primeiros Passos
 
