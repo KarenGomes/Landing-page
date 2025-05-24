@@ -1,0 +1,40 @@
+@import "../../../../../assets/styles/variables";
+
+.contact-section {
+  background-color: $text-light;
+  padding: 60px 0;
+}
+
+.text-dark-text {
+  color: $text-dark;
+}
+
+.contact-form {
+  background-color: $white;
+  border: 1px solid rgba($black, 0.1);
+
+  .form-control {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba($black, 0.2);
+    &:focus {
+      border-color: $secondary-color;
+      box-shadow: 0 0 0 0.25rem rgba($secondary-color, 0.25);
+    }
+  }
+
+  .custom-send-btn {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    font-size: 1.2em;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: lighten($primary-color, 10%);
+      border-color: lighten($primary-color, 10%);
+    }
+  }
+}

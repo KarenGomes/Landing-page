@@ -1,0 +1,89 @@
+@import "../../../../../assets/styles/variables";
+
+.plan-cards-section {
+  background-color: $text-light;
+  padding: 60px 0;
+}
+
+.text-dark-text {
+  color: $text-dark;
+}
+
+.filter-controls {
+  .form-control, .form-select {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba($black, 0.2);
+
+    &:focus {
+      border-color: $secondary-color;
+      box-shadow: 0 0 0 0.25rem rgba($secondary-color, 0.25);
+    }
+  }
+}
+
+.plan-card {
+  border: 2px solid $secondary-color;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: $white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-title {
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .card-subtitle {
+    color: $text-dark;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .card-text {
+    color: $text-dark;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+}
+
+.spinner-border {
+  color: $primary-color;
+}
+
+/* Estilos para Paginação */
+.pagination {
+  .page-item {
+    .page-link {
+      color: $primary-color;
+      border: 1px solid $secondary-color;
+      margin: 0 2px;
+      border-radius: 0.25rem;
+
+      &:hover {
+        background-color: lighten($secondary-color, 30%);
+        color: $primary-color;
+      }
+    }
+
+    &.active .page-link {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: $white;
+    }
+
+    &.disabled .page-link {
+      color: $text-light;
+      pointer-events: none;
+      background-color: $text-light;
+      border-color: $text-light;
+    }
+  }
+}
